@@ -7,15 +7,26 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>com.xgs.springBoot Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-  <build>
-    <finalName>com.xgs.springBoot</finalName>
-  </build>
+  <!-- 必须引用springboot 父工程依赖 -->
+  <parent>  
+    <groupId>org.springframework.boot</groupId>  
+    <artifactId>spring-boot-starter-parent</artifactId>  
+    <version>1.3.3.RELEASE</version>  
+  </parent>  
+  <!-- SpringWeb工程依赖，默认集成SpringMVC -->
+  <dependencies>  
+    <dependency>  
+          <groupId>org.springframework.boot</groupId>  
+          <artifactId>spring-boot-starter-web</artifactId>  
+      </dependency>  
+  </dependencies>  
+  <!-- springBoot maven 运行编译环境 -->
+  <build>  
+    <plugins>  
+           <plugin>  
+               <groupId>org.springframework.boot</groupId>  
+               <artifactId>spring-boot-maven-plugin </artifactId>  
+          </plugin>  
+      </plugins>  
+  </build>  
 </project>
