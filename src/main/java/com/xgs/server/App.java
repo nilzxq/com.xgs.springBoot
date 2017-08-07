@@ -12,6 +12,6 @@ import com.xgs.controller.IndexController;
 @EnableAutoConfiguration
 public class App {
 	public static void main(String[] args) {
-		SpringApplication.run(IndexController.class,args);
+		SpringApplication.run(App.class,args);
 	}
 }

@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @RequestMapping("/springBoot")
 @Controller
-
 public class IndexController {
 
 	@ResponseBody
